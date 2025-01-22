@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Godwin A</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Poppins', sans-serif;
+                background: linear-gradient(120deg, #03181F, #03181F);
+                color: #03181F;
+                overflow-x: hidden;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 10%;
+                background-color: #319CB5;
+                color: #fff;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav {
+                display: flex;
+                gap: 20px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 400;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #03181F;
+            }
+            .hero {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 50px 10% 50px 03%;
+                background-color: #f4f4ff;
+                border-radius: 0 0 50px 50px;
+                box-shadow: 0 4px 5px #319CB5;
+                width: 80%;
+            }
+            .hero-text {
+                text-align: left;
+                max-width: 900px;
+            }
+            .hero-text h1 {
+                font-size: 3.5rem;
+                color: #03181F;
+            }
+            .hero-text p {
+                font-size: 1.2rem;
+                margin: 20px 0;
+                color: #040D0F;
+            }
+            .cta-buttons {
+                margin-top: 20px;
+            }
+            .cta-buttons a {
+                text-decoration: none;
+                padding: 12px 25px;
+                font-size: 1rem;
+                border-radius: 50px;
+                margin-right: 10px;
+                transition: all 0.3s;
+            }
+            .projects-btn {
+                background-color: transparent;
+                border: 2px solid #319CB5;
+                color: #319CB5;
+            }
+            .projects-btn:hover {
+                background-color: #319CB5;
+                color: #fff;
+            }
+            .hire-btn {
+                background-color: transparent;
+                border: 2px solid #319CB5;
+                color: #319CB5;
+            }
+            .hire-btn:hover {
+                background-color: #319CB5;
+                color: #fff;
+            }
+            .hero-image img {
+                max-width: 250px;
+                width: 100%;
+                border-radius: 20px;
+            }
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 50px auto;
+            }
+            section {
+                margin-bottom: 50px;
+            }
+            section h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: #319CB5;
+                border-bottom: 3px solid #CCF5FE;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+            .skills, .projects {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .skill, .project {
+                background: #f4f4ff;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                flex: 1 1 calc(33.333% - 40px);
+                transition: transform 0.3s;
+            }
+            .skill:hover, .project:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 5px #319CB5;
+            }
+            .skill h3, .project h3 {
+                font-size: 1.5rem;
+                color: #319CB5;
+                margin-bottom: 10px;
+            }
+            footer {
+                background-color: #319CB5;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Godwin A</h1>
+            <nav>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="G_Resume.pdf" download="GodwinResume.pdf" target="_blank"><i class="fa fa-download"></i> Resume</a>
+            </nav>
+        </header>
+
+        <div class="row" align="center">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Hello, I'm Godwin</h1>
+                    <p>A highly skilled and dedicated Software Engineer committed to developing innovative and efficient web solutions leveraging cutting-edge technologies.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="projects-btn">My Projects</a>
+                        <a href="#contact" class="hire-btn">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="Godwin.jpg" alt="Godwin">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, jQuery, React.js</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Backend</h3>
+                        <p>Core PHP, Laravel Framework</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Database</h3>
+                        <p>MySQL, PostgreSQL</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Other Tools</h3>
+                        <p>AJAX, REST APIs, Git</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <p style="color: #CCF5FE;">Three years of expertise in web development, specializing in full-stack development and delivering scalable, efficient web solutions customized to business needs.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>WCMS</h3>
+                        <p>
+                            <ul style="padding-left: 5px;">
+                                <li>Designed and developed master pages and view pages utilizing HTML and CSS, implementing robust form validations using JavaScript and jQuery libraries.</li>
+                                <li>Leveraged PHP and the Laravel framework to enable secure access with proper authorization protocols.</li>
+                                <li>Managed data storage and retrieval in PostgreSQL while ensuring effective form validation mechanisms.</li>
+                                <li>Actively participated in code reviews, contributing to the refinement of coding standards and the adoption of best practices.</li>
+                                <li>Assisted in identifying and resolving bugs, enhancing application stability and reliability.</li>
+                                <li>Prepared comprehensive documentation of components and web pages as part of the client handover process.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>SIRD-ICMS</h3>
+                        <p>
+                            <ul style="padding-left: 5px;">
+                                <li>Developed and implemented solutions based on client requirements, ensuring a strategic approach to meet business objectives.</li>
+                                <li>Designed and built master and view pages using HTML, CSS, and JavaScript (jQuery) to deliver a user-friendly, responsive interface.</li>
+                                <li>Utilized the PHP Laravel framework to develop robust applications, integrating efficient data handling with MySQL via AJAX for optimal performance and enhanced user experience.</li>
+                                <li>Collaborated closely with clients to gain a comprehensive understanding of their needs and provided ongoing support for bug identification and resolution.</li>
+                                <li>Contributed to the successful deployment of key pre-order modules, ensuring seamless integration and timely delivery.</li>
+                                <li>Provided critical support in the analysis and resolution of live defects.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>TNEMS</h3>
+                        <p>
+                            <ul style="padding-left: 5px;">
+                                <li>Developed master and view pages using HTML, CSS, JavaScript, and Core PHP, implementing secure authorization for data access.</li>
+                                <li>Efficiently managed data storage and retrieval in MySQL, incorporating robust form validations to ensure data integrity and accuracy.</li>
+                                <li>Provided support in the analysis and resolution of live defects, ensuring prompt identification and effective fixes to maintain system stability.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>Custom Project - EXPM</h3>
+                        <p style="padding-left: 5px;">Developed a Personal Finance Management system using PHP Laravel Framework, PostgreSQL and jQuery to streamline client interactions.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Portfolio</h3>
+                        <p style="padding-left: 5px;">Created a personal portfolio website showcasing skills and projects using HTML5, CSS3, and JavaScript.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p style="color: #CCF5FE;">Email : godwinofficial.1023@gmail.com</p>
+                <p style="color: #CCF5FE;">Mobile : 9551633473</p>
+                <p style="color: #CCF5FE;">LinkedIn : <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+                <p style="color: #CCF5FE;">GitHub : <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Godwin. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
